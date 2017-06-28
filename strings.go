@@ -1,4 +1,4 @@
-strings.Map(mapping,s) 源码
+trings.Map(mapping,s) 源码
 /*
 * 此方法为了 读取s中的字符串给mapping处理，处理好了返回字符串。要注意return string(b[0:nbytes]) 一定是整个字符串长度 因为当b!=nil时，长度一定会和字** 符串s相同。 而且在替换字符串的时候都使用了ascii码.
 */
@@ -45,4 +45,3 @@ func Map(mapping func(rune) rune, s string) string {
 	}
 	return string(b[0:nbytes])//返回整个字符串
 }
-
